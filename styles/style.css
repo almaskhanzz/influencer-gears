@@ -52,9 +52,6 @@ main{
     flex-direction:column ;
     align-items: center;
 }
-.container{
-    padding: 30px;
-}
 /* first section */
 .influence{
     width: 1200px;
@@ -109,6 +106,10 @@ main{
 }
 
 /* Popular collection part */
+/* .bor{
+    border: 3px solid red;
+    margin-bottom: px;
+} */
 .popular-collection{
     width: 1047px;
     height: 1662px;
@@ -184,7 +185,34 @@ main{
     text-align: end;
     margin-right: 8px;
 }
-
+/* Third Section */
+.documentary{
+    padding-bottom: 30px;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 20px;
+}
+.video{
+    width: 280px;
+    height: 320px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.video-banner iframe{
+    border-radius: 15px;
+    margin:15px;
+}
+.details{
+    margin:15px;
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+/* Footer */
 footer{
     background-color: #0A0826;
     padding-top: 30px;
