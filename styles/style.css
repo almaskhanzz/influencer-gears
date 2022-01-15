@@ -52,6 +52,10 @@ main{
     flex-direction:column ;
     align-items: center;
 }
+/* .gap{
+    padding: 30px;
+    margin-top: 21px;
+} */
 /* first section */
 .influence{
     width: 1200px;
@@ -106,10 +110,6 @@ main{
 }
 
 /* Popular collection part */
-/* .bor{
-    border: 3px solid red;
-    margin-bottom: px;
-} */
 .popular-collection{
     width: 1047px;
     height: 1662px;
@@ -247,4 +247,51 @@ footer{
     padding: 10px 15px;
     font-size: 20px;
     color: #FFFFFF;
+}
+
+/* -----------------
+      Media Queries   
+------------------ */
+/* Mobile devices */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .collection-banner .img{
+        width: 100%;
+    }
+    .videos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header{
+        display:none;
+    }
+    footer{
+        width:100%;
+        padding: 15px;
+    }
+}
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .popular-collection{
+        width: 50%;
+    }
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .videos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collection{
+        flex-direction: column;
+    }
+    .video{
+        flex-direction: column;
+    }
+    footer{
+        width:100%;
+        padding: 15px;
+    }
 }
